@@ -8,14 +8,31 @@
 </head>
 <body>
     <header id="navbar" class="navbar">
-        <div id="logo">&copy;PauloShop</div>
-        <ul class="items">
-            <li><a href="">Shoes</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Login</a></li>
-        </ul>
+        <div id="logo"><span>&copy;Paulo</span><span class="shop">Shop</span></div>
+        <nav>
+            <ul class="items">
+                <li><a href="">Shoes</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a class="button">Login</a>
+        </div>
     </header>
     <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>The best shoes, with the best prices.</h2>
+                <p>Free shipping on orders over <i>$699.90</i></p>
+                <div class="hero-actions">
+                    <a href="#" class="btn-primary">View offers</a>
+                    <a href="#" class="btn-secondary">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://artwalk.vtexassets.com/arquivos/ids/638156/IU776-6-100-1-800x1000.jpg?v=639165268320600000" alt="highlighted product">
+            </div>
+        </section>
         <div class="products-list">
             <div class="product">
                 <img src="https://imgnike-a.akamaihd.net/1300x1300/01113751A4.jpg" alt="">
@@ -48,9 +65,38 @@
                 <span>$249.90</span>
             </div>
         </div>
+        <div class="table-wrapper">
+            <section class="specs">
+                <h2>Shoes specifications</h2>
+                <table>
+                    <thead>
+                        <th>Component</th>
+                        <th>Especification</th>
+                        <th>Highlight</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sole</td>
+                            <td>Camel leather</td>
+                            <td>Lasts a long time</td>
+                        </tr>
+                        <tr>
+                            <td>Insole</td>
+                            <td>Goose feather</td>
+                            <td>Very comfortable</td>
+                        </tr>
+                        <tr>
+                            <td>Tissue</td>
+                            <td>Cotton</td>
+                            <td>Resistant</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </main>
     <footer>
-        <p id="copyright">&copy; 2026. All rights reserved.</p>
+        <p id="copyright">&copy; 2026 PauloShop. All rights reserved.</p>
         <ul>
             <li><a href="#navbar">Home</a></li>
             <li><a href="">Contact</a></li>
