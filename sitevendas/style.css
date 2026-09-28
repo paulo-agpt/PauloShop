@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html, body {
@@ -21,12 +22,13 @@ main {
 .navbar {
     display: flex;
     padding: 1rem;
-    background-color: rgb(220, 223, 226);
+    background: linear-gradient(135deg, rgb(220, 223, 226), rgb(172, 172, 172));
+    background-color: rgb(220, 223, 226) ;
     justify-content: space-between;
 }
 
-#logo {
-    color: rgb(42, 42, 43);
+.shop {
+    color: rgb(51, 51, 51);
 }
 
 .navbar a {
@@ -42,6 +44,21 @@ main {
     list-style-type: none;
 }
 
+.button {
+    background: rgb(220, 223, 226);
+    border: 2px solid rgb(140, 140, 140);
+    border-radius: 5px;
+    transition: color 0.1s ease, border-color 0.1s ease;
+    padding: 2px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: rgb(140, 140, 140);
+    color: rgb(220, 223, 226);
+}
+
 .items li {
     border-bottom: 2px solid transparent;
     transition: color 0.3s ease, border-color 0.3s ease;
@@ -52,12 +69,85 @@ main {
     border-bottom: 2px solid rgb(68, 68, 68);
 }
 
+section.hero {
+    background: linear-gradient(135deg, rgb(150, 151, 151), rgb(133, 131, 131));
+    color: white;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+div.hero-text h2 {
+    flex: 1;
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+div.hero-text p {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+div.hero-actions {
+    display: flex;
+    gap: 16px;
+}
+
+div.hero-image {
+    flex: 0 0 320px;
+}
+
+div.hero-image img {
+    width: 100%;
+    border-radius: 12px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn-primary {
+    background: rgb(240, 239, 239);
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-primary:hover {
+    background: rgb(73, 73, 73);
+    color: white;
+}
+
+.btn-secondary {
+    background: rgb(240, 239, 239);
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-secondary:hover {
+    background: rgb(73, 73, 73);
+    color: white;
+}
+
 .products-list {
     width: 100%;
     display: grid;
     justify-content: center;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+div.product img {
+    border-radius: 12px;
 }
 
 .product {
@@ -72,6 +162,7 @@ main {
 .product:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-4px);
+    border-radius: 12px;
 }
 
 .product p {
@@ -104,4 +195,63 @@ footer a {
 
 footer li :hover {
     border-bottom: 1px solid black;
+}
+
+section.specs {
+    background: white;
+    padding: 64px 40px;
+}
+
+section.specs h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #656566;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section.specs table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+section.specs table thead th{
+    background: #808081;
+    color: white;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    text-align: left;
+}
+
+section.specs table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+
+}
+
+section.specs table tbody tr:nth-child(even) {
+    background: #efeff0d2;
+}
+
+td:nth-child(3) {
+    color: #1D4ED8;
+    font-weight: bold;
+}
+
+section.specs table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+section.specs table thead th:last-child {
+    border-top-right-radius: 10px;
 }
